@@ -7,4 +7,4 @@ https://drawsql.app/teams/hwahdan/diagrams/libraryapp
 
 In order to run the application, you need the following:
 1. Have node installed
-2. Install dependencies using ````npm install```
+2. Install dependencies using ```npm install```
