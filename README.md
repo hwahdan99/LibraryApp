@@ -30,8 +30,22 @@ In order to run the application, you need the following:
    - GET /borrowers/:borrowerId : Get details of a specific borrower by their ID.
    - PUT /borrowers/:borrowerId : Update the details of a specific borrower.
    - DELETE /borrowers/:borrowerId : Delete a specific borrower by their ID.
-   - - Request Body: ```{
+   - Request Body: ```{
   "firstName": "Borrower first name",
   "lastName": "Borrower last name",
   "email": "Borrower Email"
 }```
+
+3. Borrowings
+   - POST /borrowings/checkout: Check out a book.
+   - POST /borrowings/return: Return a book.
+   - GET /borrowings: Get a list of all borrowings.
+   - GET /borrowings/overdue: Get a list of all overdue borrowings.
+   - GET /borrowings/current-borrowings/:borrowerId: Get a list of books currently borrowed by a specific borrower.
+  
+4. Error Handling
+   - 200 OK: Successful operation.
+   - 201 Created: Resource successfully created.
+   - 400 Bad Request: Invalid input or request.
+   - 404 Not Found: Resource not found.
+   - 500 Internal Server Error: Server error.
