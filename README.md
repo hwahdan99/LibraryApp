@@ -15,6 +15,9 @@ In order to run the application, you need the following:
    - Endpoint: \books
    - GET /books: Get a list of all books in the library.
    - POST /books: Add a new book.
+   - GET /books/:bookId : Get details of a specific book by its ID.
+   - PUT /books/:bookId : Update the details of a specific book.
+   - DELETE /books/:bookId: Delete a specific book by its ID.
    - Request Body: ```{
   "title": "Book Title",
   "author": "Author Name",
